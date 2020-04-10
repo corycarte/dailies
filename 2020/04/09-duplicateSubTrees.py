@@ -40,9 +40,15 @@ def dup_trees(root):
   
   for d in duplicates:
     if duplicates[d] > 1:
-      solution.append(d)
+      temp = []
+      for i in range(duplicates[d]):
+        temp.append(d)
+      solution.append(temp)
 
   return solution
+
+# I got this wrong. My basic idea was ok. But My function returns
+# string representations of the binary trees, not the actual trees.
 
 n3_1 = Node(3)
 n2_1 = Node(2, n3_1)
@@ -56,7 +62,6 @@ n1 = Node(1, n2_1, n2_2)
 #  /   /
 # 3   3
 
-print("Result is:")
 print(dup_trees(n1))
 # [[(3), (3)], [(2, (3)), (2, (3))]]
 # There are two duplicate trees
