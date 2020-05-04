@@ -6,7 +6,11 @@
 def sum_binary(bin1, bin2):
     # complete function here
     # personal challenge, give recursive solution
-    print('start')
+    
+    
+    
+    
+    return 'start'
 
 
 # Test Code
