@@ -375,3 +375,62 @@ if [ ! -f KnapsackProblem.py ]; then
     touch KnapsackProblem.py
 fi
 popd
+
+# GoLang
+
+if [ ! -d "go" ]
+then
+    printf "Directory go doesn't exist, creating."
+    mkdir python
+fi
+
+pushd ./go
+
+#MergeSort
+if [ ! -f MergeSort.go ]; then
+    touch MergeSort.go
+fi
+
+# QuickSort
+if [ ! -f QuickSort.go ]; then
+    touch QuickSort.go
+fi
+
+# Dijkstra
+if [ ! -f Dijkstra.go ]; then
+    touch Dijkstra.go
+fi
+
+# AStar
+if [ ! -f AStar.go ]; then
+    touch AStar.go
+fi
+# BinarySearch
+if [ ! -f BinarySearch.go ]; then
+    touch BinarySearch.go
+fi
+# BFS-recursive
+if [ ! -f BFS-recursive.go ]; then
+    touch BFS-recursive.go
+fi
+
+# BFS-iterative
+if [ ! -f BFS-iterative.go ]; then
+    touch BFS-iterative.go
+fi
+
+# DFS-recursive
+if [ ! -f DFS-recursive.go ]; then
+    touch DFS-recursive.go
+fi
+
+# DFS-iterative
+if [ ! -f DFS-iterative.go ]; then
+    touch DFS-iterative.go
+fi
+
+# KnapsackProblem
+if [ ! -f KnapsackProblem.go ]; then
+    touch KnapsackProblem.go
+fi
+popd
